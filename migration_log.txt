@@ -1,0 +1,95 @@
+# RebelSUITE File Migration Log
+
+## Date: 3/17/2025
+
+### File Organization Summary
+
+All source files have been organized into a structured directory layout under the `src` folder. Files were categorized based on their functionality and purpose:
+
+1. **Geometry (`src/geometry/`)**: Contains all geometric primitives and related classes
+   - Basic shapes (Circle, Line, Arc, Rectangle, etc.)
+   - Advanced geometry (NURBS, Bezier curves, Splines, etc.)
+   - Mesh-related classes
+   - Bounding geometry
+
+2. **UI (`src/ui/`)**: Contains all user interface components
+   - Basic UI widgets (Button, Checkbox, Dropdown, etc.)
+   - Window management
+   - Theme and style management
+   - UI managers and controllers
+
+3. **Tools (`src/tools/`)**: Contains all modeling and editing tools
+   - Boolean operations (Union, Subtract, Intersect)
+   - Surface operations (Extrude, Revolve, Loft, Sweep)
+   - Edge operations (Fillet, Chamfer, Draft)
+   - Pattern and mirror tools
+
+4. **Constraints (`src/constraints/`)**: Contains all constraint-related classes
+   - Geometric constraints (Angle, Length, Radius, etc.)
+   - Constraint detection and management
+
+5. **Graphics (`src/graphics/`)**: Contains all rendering and graphics-related code
+   - Shaders (OpenGL, Vulkan)
+   - Rendering systems
+   - Preview renderers
+   - Color management
+
+6. **Core (`src/core/`)**: Contains core application functionality
+   - Application entry point
+   - Event system
+   - File I/O
+   - Logging
+   - Transaction management
+   - Undo/Redo system
+
+7. **Memory (`src/memory/`)**: Contains memory management utilities
+   - Allocators
+   - Smart pointers
+   - Memory pools
+   - Garbage collection
+
+8. **Joints (`src/joints/`)**: Contains joint-related classes for assembly
+   - Revolute, Prismatic, Cylindrical, and Fixed joints
+
+9. **Utils (`src/utils/`)**: Contains utility classes and helpers
+   - Spatial partitioning
+   - Pattern spacing
+   - Component positioning
+   - Boolean operations for subdivision surfaces
+
+10. **Layout (`src/layout/`)**: Contains layout management classes
+    - Dock, Flex, Flow, Grid, and Stack layouts
+    - List views
+
+11. **Selection (`src/selection/`)**: Contains selection-related functionality
+    - Selection managers
+    - Object picking
+    - Snap management
+    - Selection visualization
+
+12. **Viewport (`src/viewport/`)**: Contains viewport-related classes
+    - Viewport management
+    - Camera controllers
+    - View synchronization
+    - Viewport layouts
+
+13. **Scene (`src/scene/`)**: Contains scene graph and node management
+    - Scene nodes
+    - Scene graph
+    - Assembly tree
+    - Renderable nodes
+
+### Files Remaining in Root Directory
+- cleanup_log.md
+- CMakeLists.txt
+- ExplodedViewTests.cpp
+- migrate_files.ps1
+- migration_log.txt
+- README.md
+- organize_files.ps1
+
+### Next Steps
+1. Update CMakeLists.txt to reflect the new directory structure
+2. Update include paths in source files to match the new directory structure
+3. Verify build system works with the new organization
+4. Consider moving test files to a dedicated test directory structure
