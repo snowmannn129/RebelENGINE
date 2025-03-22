@@ -1,5 +1,23 @@
 # RebelENGINE Development Procedure
 
+## Backup Standard
+
+RebelENGINE follows the RebelSUITE backup standard. Backups are created after major milestones:
+- Phase completions
+- Release types (Alpha, Beta, Full)
+- Major development advancements
+- Scheduled dates
+
+Backups are stored as ZIP files in `C:\Users\snowm\Desktop\VSCode\Backup` with the naming format:
+`RebelENGINE_(mmddyyyy)_(current time).zip`
+
+To create a backup, run:
+```powershell
+.\backup_project.ps1 -ProgramName "RebelENGINE" -MilestoneType "<milestone type>"
+```
+
+Backup history is documented below in chronological order.
+
 ## 1. Development Environment & Execution
 - RebelENGINE is developed in VSCode on Windows 11 using PowerShell
 - Built using C++ with modern graphics APIs (DirectX, Vulkan, OpenGL)
@@ -386,3 +404,15 @@ git commit -m "Implemented particle system with GPU acceleration"
 - All features must be verified using unit, system, and integration tests
 - Do NOT implement untested or disconnected components
 - DO ensure all systems integrate properly before moving to the next task
+
+## Backup: Development - 03/19/2025 03:14:42
+
+* Backup created: RebelENGINE_03192025_031442.zip
+* Location: C:\Users\snowm\Desktop\VSCode\Backup\RebelENGINE_03192025_031442.zip
+
+
+## Backup: Development - 03/21/2025 18:13:10
+
+* Backup created: RebelENGINE_03212025_181309.zip
+* Location: C:\Users\snowm\Desktop\VSCode\Backup\RebelENGINE_03212025_181309.zip
+
